@@ -1,0 +1,91 @@
+generated: '2026-10-13'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 6
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - other
+  - portal
+  - website
+hosts:
+- host: api.kia.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: kia.com
+  role: api
+  relation: own
+- host: developer.kia.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  - FAQ
+  - Support
+  - TermsOfService
+  serves:
+  - docs
+  registrable_domain: kia.com
+  role: portal
+  relation: own
+- host: developers.kia.com
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: kia.com
+  role: portal
+  relation: own
+- host: idpconnect-eu.kia.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: kia.com
+  role: other
+  relation: own
+- host: prd.kr-ccapi.kia.com
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: kia.com
+  role: other
+  relation: own
+- host: www.kia.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - PrivacyPolicy
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: kia.com
+  role: website
+  relation: own

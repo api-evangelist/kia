@@ -1,0 +1,12 @@
+generated: '2026-10-13'
+method: derived
+generator: derive-webhooks.py
+source:
+- openapi/_ae-authored/kia-connected-car-api.yml
+description: 'Event surface derived from the provider''s own OpenAPI: webhooks. No AsyncAPI document is published by the provider; this catalog
+  lists the events the contract names.'
+management_operations: []
+events:
+- event: partner_deletecallback
+  description: 데이터 조회 불가 상태 알림
+  declared_in: webhooks

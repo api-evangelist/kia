@@ -1,23 +1,112 @@
 aid: kia
+
 name: Kia
-description: 'Kia is a company surfaced via the API Evangelist harvest backlog (source: gap-automotive-real-estate)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.kia.com/etc.clientlibs/settings/wcm/designs/eut/clientlib/resources/rbr/kia-company-logo.jpg
+
+description: 'Kia Corporation is a South Korean automaker. Through KIA Developers (developer.kia.com) it publishes a Korea-market
+  connected-car data API: OAuth2 account APIs, personal-data consent APIs, and vehicle profile, status (odometer, range, EV
+  battery/charging) and warning-lamp data for partner services.'
+
 url: https://raw.githubusercontent.com/api-evangelist/kia/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:gap-automotive-real-estate
-x-tier: stub
+
+x-tier: enriched
+
 x-tier-reason: harvest
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
+- Automotive
+- Connected Car
+- Vehicle Data
+- OAuth
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/kia-rules.yml
+- type: Webhooks
+  url: asyncapi/kia-webhooks.yml
+- type: Security
+  url: security/kia-vulnerability-disclosure.yml
+- type: ErrorCatalog
+  url: errors/kia-problem-types.yml
+- type: Conformance
+  url: conformance/kia-conformance.yml
+- type: SecurityTxt
+  url: well-known/kia-security.txt
+- type: WellKnown
+  url: well-known/kia-well-known.yml
+- type: Hosts
+  url: hosts/kia-hosts.yml
+- type: Vendors
+  url: vendors/kia-vendors.yml
+- type: StatusPage
+  url: https://www.kia.com/kr/kia-connect/service/remote-control/status
+- type: Pricing
+  url: https://www.kia.com/kr/vehicles/k9/price
+- type: Documentation
+  url: https://developer.kia.com/
+- type: VulnerabilityDisclosure
+  url: security/kia-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/kia-domain-security.yml
 - type: Website
   url: https://www.kia.com/
+- type: DeveloperPortal
+  url: https://developer.kia.com/web/v1/kia/main
+- type: FAQ
+  url: https://developer.kia.com/web/v1/kia/faqs
+- type: Support
+  url: https://developer.kia.com/web/v1/kia/tech_support
+- type: TermsOfService
+  url: https://developer.kia.com/web/v1/kia/terms_of_use
+- type: PrivacyPolicy
+  url: https://www.kia.com/us/en/privacy
+
+apis:
+- aid: kia:kia-connected-car-api
+  name: KIA Developers Connected Car API
+  description: 'Korea-market connected-car API: OAuth2 login/token/profile, data-sharing consent, car list and connected-service
+    contract, vehicle status and warning-lamp states, and a partner callback for data-unavailable notifications. Partner access
+    via the KIA Developers service console.'
+  humanURL: https://developer.kia.com/web/v1/kia/main
+  baseURL: https://prd.kr-ccapi.kia.com
+  tags:
+  - Connected Car
+  - Vehicle Data
+  properties:
+  - type: Documentation
+    url: https://developer.kia.com/web/v1/kia/specification/account
+  - type: OpenAPI
+    url: openapi/_ae-authored/kia-connected-car-api.yml
+    x-generated-from: documentation
+  - type: GettingStarted
+    url: https://developer.kia.com/web/v1/kia/guide_api
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-13'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.kia.com/
+    status: 200
