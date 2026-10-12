@@ -31,6 +31,7 @@ hosts:
   - contract-discovery
   - well-known
   types:
+  - Documentation
   - DeveloperPortal
   - FAQ
   - Support

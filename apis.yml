@@ -14,9 +14,9 @@ x-type: company
 
 x-source: harvest:gap-automotive-real-estate
 
-x-tier: enriched
+x-tier: profiled
 
-x-tier-reason: harvest
+x-tier-reason: enrichment pass 2026-10-13 (local-v5; was harvest)
 
 specificationVersion: '0.20'
 
@@ -38,6 +38,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: StatusPage
+  url: https://www.kia.com/kr/kia-connect/service/remote-control/status
+- type: Pricing
+  url: https://www.kia.com/kr/vehicles/k9/price
 - type: Spectral
   url: rules/kia-rules.yml
 - type: Webhooks
@@ -56,10 +60,6 @@ common:
   url: hosts/kia-hosts.yml
 - type: Vendors
   url: vendors/kia-vendors.yml
-- type: StatusPage
-  url: https://www.kia.com/kr/kia-connect/service/remote-control/status
-- type: Pricing
-  url: https://www.kia.com/kr/vehicles/k9/price
 - type: Documentation
   url: https://developer.kia.com/
 - type: VulnerabilityDisclosure
@@ -99,6 +99,10 @@ apis:
   - type: GettingStarted
     url: https://developer.kia.com/web/v1/kia/guide_api
 
+x-enrichment:
+  status: enriched
+  pass: local-v5
+  date: '2026-10-13'
 x-coverage:
   state: none
   reason: no-developer-program

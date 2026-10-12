@@ -36,6 +36,7 @@ reliance:
     cannot tell those apart
 checked:
 - 'docs-platform: no-docs-host'
+- developer.kia.com (Documentation)
 - www.kia.com (Website)
 - developer.kia.com (DeveloperPortal)
 - developer.kia.com (Support)
