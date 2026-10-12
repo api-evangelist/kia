@@ -1,0 +1,104 @@
+generated: '2026-10-13'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/kia-connected-car-api.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on api.kia.com, www.kia.com, developer.kia.com, developers.kia.com; verdict
+  absent. Candidate tools below are derived from the 18 operation(s) in the provider's own OpenAPI (18 listed); they describe what a server WOULD
+  expose, not one that exists.
+tools:
+- name: account_authorize
+  operationId: account_authorize
+  method: GET
+  path: /api/v1/user/oauth2/authorize
+  description: 로그인 인증 요청
+- name: account_profile
+  operationId: account_profile
+  method: GET
+  path: /api/v1/user/profile
+  description: 사용자 정보 조회
+- name: account_token
+  operationId: account_token
+  method: POST
+  path: /api/v1/user/oauth2/token
+  description: 사용자 토큰 발급/갱신/삭제 요청
+- name: carprofile_carlist
+  operationId: carprofile_carlist
+  method: GET
+  path: /api/v1/car/profile/carlist
+  description: 내 차량 리스트 조회
+- name: carprofile_contract
+  operationId: carprofile_contract
+  method: GET
+  path: /api/v1/car/profile/{carId}/contract
+  description: 커넥티드 서비스 가입일/무료 종료일 조회
+- name: service_agreement
+  operationId: service_agreement
+  method: POST
+  path: /api/v1/car-service/terms/agreement
+  description: 개인정보 제공 동의 요청
+- name: service_termreject
+  operationId: service_termreject
+  method: GET
+  path: /api/v1/car-service/terms/reject
+  description: 개인정보 제공 철회 요청
+- name: status_dte
+  operationId: status_dte
+  method: GET
+  path: /api/v1/car/status/{carId}/dte
+  description: 주행 가능 거리 조회
+- name: status_evbattery
+  operationId: status_evbattery
+  method: GET
+  path: /api/v1/car/status/{carId}/ev/battery
+  description: 전기차 배터리 잔량 조회
+- name: status_evcharging
+  operationId: status_evcharging
+  method: GET
+  path: /api/v1/car/status/{carId}/ev/charging
+  description: 전기차 충전 상태 조회
+- name: status_odometer
+  operationId: status_odometer
+  method: GET
+  path: /api/v1/car/status/{carId}/odometer
+  description: 누적 운행 거리 조회
+- name: statuswarning_breakoil
+  operationId: statuswarning_breakoil
+  method: GET
+  path: /api/v1/car/status/warning/{carId}/breakOil
+  description: 브레이크 오일 경고등 상태 조회
+- name: statuswarning_engineoil
+  operationId: statuswarning_engineoil
+  method: GET
+  path: /api/v1/car/status/warning/{carId}/engineOil
+  description: 엔진 오일 경고등 상태 조회
+- name: statuswarning_lampwire
+  operationId: statuswarning_lampwire
+  method: GET
+  path: /api/v1/car/status/warning/{carId}/lampWire
+  description: Lamp wire 경고등 상태 조회
+- name: statuswarning_lowfuellight
+  operationId: statuswarning_lowfuellight
+  method: GET
+  path: /api/v1/car/status/warning/{carId}/lowFuel
+  description: 주유 경고등 상태 조회
+- name: statuswarning_smartkeybattery
+  operationId: statuswarning_smartkeybattery
+  method: GET
+  path: /api/v1/car/status/warning/{carId}/smartKeyBattery
+  description: 스마트키 배터리 상태 조회
+- name: statuswarning_tirepressurelamp
+  operationId: statuswarning_tirepressurelamp
+  method: GET
+  path: /api/v1/car/status/warning/{carId}/tirePressure
+  description: 타이어 공기압 경고등 상태 조회
+- name: statuswarning_washerfluid
+  operationId: statuswarning_washerfluid
+  method: GET
+  path: /api/v1/car/status/warning/{carId}/washerFluid
+  description: 워셔액 경고등 상태 조회
