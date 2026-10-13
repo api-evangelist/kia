@@ -82,6 +82,8 @@ hosts:
   - well-known
   - vendor-detect
   types:
+  - StatusPage
+  - Pricing
   - Website
   - PrivacyPolicy
   serves:
