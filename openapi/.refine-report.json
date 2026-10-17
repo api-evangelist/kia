@@ -1,0 +1,25 @@
+{
+  "provider": "kia",
+  "sources": [
+    "_ae-authored/kia-connected-car-api.yml"
+  ],
+  "outputs": [
+    "kia-default-api-openapi.yml",
+    "kia-api-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "kia-connected-car-api.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "kia-connected-car-api.yml: declared missing tag: \uac1c\uc778\uc815\ubcf4 \uc81c\uacf5 \ub3d9\uc758 \ubc0f \ucca0\ud68c",
+    "kia-connected-car-api.yml: declared missing tag: \uacc4\uc815 API",
+    "kia-connected-car-api.yml: declared missing tag: \ucc28\ub7c9 \uacbd\uace0\ub4f1 \uc0c1\ud0dc",
+    "kia-connected-car-api.yml: declared missing tag: \ucc28\ub7c9 \ub370\uc774\ud130",
+    "kia-connected-car-api.yml: declared missing tag: \ucc28\ub7c9 \uc0c1\ud0dc",
+    "kia-connected-car-api.yml: declared missing tag: \ud30c\ud2b8\ub108\uc0ac \uc11c\ube44\uc2a4",
+    "apis.yml register: written (+2 apis, 2 total)"
+  ],
+  "skipped": []
+}

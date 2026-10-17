@@ -80,25 +80,34 @@ common:
   url: https://www.kia.com/us/en/privacy
 
 apis:
-- aid: kia:kia-connected-car-api
-  name: KIA Developers Connected Car API
-  description: 'Korea-market connected-car API: OAuth2 login/token/profile, data-sharing consent, car list and connected-service
-    contract, vehicle status and warning-lamp states, and a partner callback for data-unavailable notifications. Partner access
-    via the KIA Developers service console.'
+- aid: kia:kia-api-api
+  name: Kia 계정 API
+  description: The 계정 API API from Kia — 3 operation(s) for 계정 api.
   humanURL: https://developer.kia.com/web/v1/kia/main
   baseURL: https://prd.kr-ccapi.kia.com
   tags:
-  - Connected Car
-  - Vehicle Data
+  - 계정 API
   properties:
+  - type: OpenAPI
+    url: openapi/kia-api-api-openapi.yml
   - type: Documentation
     url: https://developer.kia.com/web/v1/kia/specification/account
-  - type: OpenAPI
-    url: openapi/_ae-authored/kia-connected-car-api.yml
-    x-generated-from: documentation
   - type: GettingStarted
     url: https://developer.kia.com/web/v1/kia/guide_api
-
+- aid: kia:kia-default-api
+  name: Kia 개인정보 제공 동의 및 철회 API
+  description: The 개인정보 제공 동의 및 철회 API from Kia — 15 operation(s) for 개인정보 제공 동의 및 철회.
+  humanURL: https://developer.kia.com/web/v1/kia/main
+  baseURL: https://prd.kr-ccapi.kia.com
+  tags:
+  - 개인정보 제공 동의 및 철회
+  properties:
+  - type: OpenAPI
+    url: openapi/kia-default-api-openapi.yml
+  - type: Documentation
+    url: https://developer.kia.com/web/v1/kia/specification/account
+  - type: GettingStarted
+    url: https://developer.kia.com/web/v1/kia/guide_api
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec
