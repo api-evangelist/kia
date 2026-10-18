@@ -26,6 +26,12 @@ modified: '2026-10-13'
 
 tags:
 - Automotive
+- Connected Vehicles
+- Vehicle Data
+- Authentication
+- Company
+tags_raw:
+- Automotive
 - Connected Car
 - Vehicle Data
 - OAuth
@@ -85,7 +91,8 @@ apis:
   description: The 계정 API API from Kia — 3 operation(s) for 계정 api.
   humanURL: https://developer.kia.com/web/v1/kia/main
   baseURL: https://prd.kr-ccapi.kia.com
-  tags:
+  tags: []
+  tags_raw:
   - 계정 API
   properties:
   - type: OpenAPI
@@ -99,7 +106,8 @@ apis:
   description: The 개인정보 제공 동의 및 철회 API from Kia — 15 operation(s) for 개인정보 제공 동의 및 철회.
   humanURL: https://developer.kia.com/web/v1/kia/main
   baseURL: https://prd.kr-ccapi.kia.com
-  tags:
+  tags: []
+  tags_raw:
   - 개인정보 제공 동의 및 철회
   properties:
   - type: OpenAPI
