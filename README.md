@@ -64,5 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Kia is a company surfaced via the API Evangelist harvest backlog (source: gap-automotive-real-estate) and added to the network as a stub for full-pipeline profiling.
-- https://www.kia.com/
+Kia Corporation is a South Korean automaker. Through KIA Developers (developer.kia.com) it publishes a Korea-market connected-car data API: OAuth2 account APIs, personal-data consent APIs, and vehicle profile, status (odometer, range, EV battery/charging) and warning-lamp data for partner services.
+
+**Areas:** Automotive · Connected Vehicles · Vehicle Data · Authentication · Company
+
+## Kia on APIs.io
+
+Everything profiled for Kia is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kia/](https://apis.io/providers/kia/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Kia 계정 API](https://apis.io/apis/kia/kia-api-api/) — The 계정 API API from Kia — 3 operation(s) for 계정 api.
+- [Kia 개인정보 제공 동의 및 철회 API](https://apis.io/apis/kia/kia-default-api/) — The 개인정보 제공 동의 및 철회 API from Kia — 15 operation(s) for 개인정보 제공 동의 및 철회.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Kia Webhooks](https://apis.io/asyncapis/kia/kia-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [kia-mcp.yml](https://apis.io/servers/kia/kia-mcp-yml/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Kia API Rules](https://apis.io/rules/kia/kia-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kia Domain Security](https://apis.io/security/kia/kia-domain-security/)
+- [Kia Vulnerability Disclosure](https://apis.io/security/kia/kia-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.kia.com/)
+- [Documentation](https://developer.kia.com/)
+- [Pricing](https://www.kia.com/kr/vehicles/k9/price)
+- [Support](https://developer.kia.com/web/v1/kia/tech_support)
+- [Terms of service](https://developer.kia.com/web/v1/kia/terms_of_use)
+- [Privacy policy](https://www.kia.com/us/en/privacy)
+- [Status](https://www.kia.com/kr/kia-connect/service/remote-control/status)
+
+## API Evangelist rating
+
+**Kin Score 32.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 21.4 |
+| Contract governance | 18.2 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 31.6 |
+
+**Agent readiness 17.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | derived (partial credit) |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kia/](https://apis.io/providers/kia/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kia: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kia/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
